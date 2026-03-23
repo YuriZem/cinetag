@@ -7,6 +7,9 @@ function Inicio() {
     <>
       <Cabecalho></Cabecalho>
       <Banner imagem="home" ></Banner>
+      <Inicio>
+        <h1>Um lugar para guardar seus videos e filmes</h1>
+      </Inicio>
       <Rodape></Rodape>
     </>
     // <></>
