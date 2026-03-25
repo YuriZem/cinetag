@@ -3,6 +3,7 @@ import Banner from '../../components/Banner'
 import Titulo from '../../components/Titulo'
 import styles from './Player.module.css'
 import videos from '../../json/db.json'
+import NaoEncontrado from '../NaoEncontrado'
 function Player() {
 
 
@@ -11,6 +12,10 @@ function Player() {
   const video = videos.find((video) => {
     return video.id === Number(paramentros.id)
   })
+
+  if(!video){
+    return <NaoEncontrado></NaoEncontrado>
+  }
 
   return (
     <>
